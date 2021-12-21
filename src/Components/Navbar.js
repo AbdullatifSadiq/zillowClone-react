@@ -1,12 +1,14 @@
-import React,{useState,useEffect,useRef} from 'react'
-import {Links} from '../data';
+import React, { useState, useEffect, useRef } from 'react';
+import { Links } from '../data';
+import '../main.css';
 
 const Navbar = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <section>
+      {' '}
+      <h1>Hello world</h1>
+    </section>
+  );
+};
 
-export default Navbar
+export default Navbar;
