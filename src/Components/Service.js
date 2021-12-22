@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Services } from '../data';
 import '../main.css';
 import ServiceCard from './ServiceCard';
 
-const Service = ({ ServiceCard }) => {
+const Service = () => {
+  const [services, setServices] = useState(Services);
   return (
     <div className='services'>
-      <h3>
-        Whether you're buying, selling or renting, we can help you move forward.
-      </h3>
+      <div className='title'>
+        <h3>
+          Whether you're buying, selling or renting, we can help you move
+          forward.
+        </h3>
+      </div>
       <div>
-        {Services.map((service)=>{
-          return <ServiceCard key={Services.id }><ServiceCard/>
-        })}
-        
+        <ServiceCard services={services} />
       </div>
     </div>
   );

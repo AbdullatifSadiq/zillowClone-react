@@ -1,12 +1,22 @@
 import React from 'react';
 // import Services from '../data';
 
-const ServiceCard = ({ id, img, title, text, action }) => {
+const ServiceCard = ({ services }) => {
   return (
     <>
-      <article className='service-card'>
-        <img src={img} alt={title} />
-      </article>
+      {services.map((service) => {
+        const { id, img, title, text, action } = service;
+        return (
+          <article key={id} className='service-card'>
+            <img src={img} alt={title} />
+            <div className='card-content'>
+              <div className='title'>{title}</div>
+              <p>{text}</p>
+              <button className='action-btn'>{action}</button>
+            </div>
+          </article>
+        );
+      })}
     </>
   );
 };
