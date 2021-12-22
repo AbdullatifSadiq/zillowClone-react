@@ -12,7 +12,7 @@ const Hero = () => {
             type='text'
             placeholder='Address, neighborhood, city, ZIP'
           />
-          <span
+          <div
             className='search-icon'
             style={{
               background: '#fff',
@@ -22,8 +22,8 @@ const Hero = () => {
               borderEndEndRadius: '0.3rem',
             }}
           >
-            <FaSearch />
-          </span>
+            <FaSearch className='icon' />
+          </div>
         </div>
       </div>
     </section>
