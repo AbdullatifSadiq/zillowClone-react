@@ -10,7 +10,7 @@ const ServiceCard = ({ services }) => {
           <article key={id} className='service-card'>
             <img src={img} alt={title} />
             <div className='card-content'>
-              <div className='title'>{title}</div>
+              <div className='card-title'>{title}</div>
               <p>{text}</p>
               <button className='action-btn'>{action}</button>
             </div>
