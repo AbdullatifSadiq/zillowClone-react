@@ -7,7 +7,7 @@ const Service = () => {
   const [services, setServices] = useState(Services);
   return (
     <div className='services'>
-      <div className='title'>
+      <div className='card-title'>
         <h3>
           Whether you're buying, selling or renting, we can help you move
           forward.

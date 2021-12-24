@@ -46,7 +46,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--clr-grey-1);
-  line-height: 1.5;
+  line-height: 1.25;
   background-color: whitesmoke;
 }
 ul {
@@ -75,6 +75,10 @@ p {
   max-width: var(--max-width);
   padding: 3rem 0;
   background-color: #072a40;
+}
+.container {
+  margin: 0;
+  padding: 0;
 }
 nav {
   background: transparent;
@@ -167,7 +171,7 @@ nav {
 .center-content h3 {
   text-align: center;
   font-size: 26px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .search {
   width: auto;
@@ -205,7 +209,13 @@ nav {
   position: absolute;
   left: 87%;
 }
+.stuck {
+  position: fixed;
+  top: 10px;
+  width: 250px;
+}
 .services {
+  position: relative;
   position: absolute;
   top: 54%;
   padding: 4.5rem 0;
@@ -214,7 +224,9 @@ nav {
 .services h3 {
   color: #2a2a33;
   text-align: center;
-  padding: 0 1.25rem;
+  line-height: 1.5rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
 }
 .service-card {
   background: white;
@@ -268,4 +280,21 @@ nav {
   position: absolute;
   left: 27%;
   top: 100%;
+}
+
+.footer {
+  display: flex;
+  margin-top: 6rem;
+  background-color: white;
+  color: #0a0a14;
+  font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
+  font-weight: 700;
+  line-height: 1.5rem;
+  width: 100%;
+  position: absolute;
+  bottom: -185%;
+}
+.footer-item {
+  font-size: 1rem;
+  text-align: right;
 }
