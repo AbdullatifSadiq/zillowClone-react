@@ -37,6 +37,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -114,6 +115,7 @@ nav {
   width: 120px;
   aspect-ratio: auto 120/ 25;
 }
+
 .links {
   font-size: 15px;
   color: #fff;
@@ -192,7 +194,8 @@ nav {
   font-size: 1rem;
   font-weight: bold;
   border: 0;
-  border-left: 1px;
+  border-right: 1px solid;
+  border-radius: -2rem;
 }
 .search-icon {
   font-size: 26px;
@@ -209,11 +212,11 @@ nav {
   position: absolute;
   left: 87%;
 }
-.stuck {
+/* .stuck {
   position: fixed;
   top: 10px;
   width: 250px;
-}
+} */
 .services {
   position: relative;
   position: absolute;
@@ -237,6 +240,9 @@ nav {
   margin-bottom: 1.5rem;
   align-items: center;
   justify-content: center;
+  -webkit-box-shadow: 0px 3px 3px rgb(109, 109, 109);
+  -moz-box-shadow: 0px 3px 3px rgb(109, 109, 109);
+  box-shadow: 0px 3px 3px rgb(109, 109, 109);
 }
 .service-card img {
   max-width: 100%;
@@ -297,4 +303,81 @@ nav {
 .footer-item {
   font-size: 1rem;
   text-align: right;
+}
+
+/* Tablet version */
+@media only screen and (min-width: 768px) {
+  .logo img {
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    left: 50%;
+  }
+  .hero {
+    width: min(100%, 70.5rem);
+    /* height: 440px; */
+    background-image: url('https://www.zillowstatic.com/s3/homepage/static/_Desktop_Overlay_ChangeStartsHere_HC.webp');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .center-content h3 {
+    max-width: 100%;
+    text-align: center;
+    font-size: 2.25rem;
+    /* margin-bottom: 0.5rem; */
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 100%;
+    height: 4rem;
+    border-radius: 0.3rem;
+    box-shadow: transparent;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0;
+    border-right: 1px solid;
+    border-radius: -2rem;
+  }
+  .center-content {
+    color: #fff;
+    width: 88%;
+    max-width: 1200px;
+    display: block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: absolute;
+    top: 27%;
+    left: 3%;
+  }
+  .icon {
+    font-size: 30px;
+    color: #54545a;
+    height: 3rem;
+    position: absolute;
+    left: 91%;
+  }
+  .services {
+    position: absolute;
+    top: 54%;
+    padding: 0;
+    vertical-align: middle;
+    display: flex;
+  }
+  .services h3 {
+    font-size: 30px;
+    color: #2a2a33;
+    text-align: center;
+    line-height: 1.25;
+    padding: 0 1.25rem;
+    margin: 0.625rem 5rem 2.5rem 5rem;
+    border: 0;
+  }
 }

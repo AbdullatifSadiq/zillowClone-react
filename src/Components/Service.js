@@ -8,7 +8,7 @@ const Service = () => {
   return (
     <div className='services'>
       <div className='card-title'>
-        <h3>
+        <h3 className='services-h3'>
           Whether you're buying, selling or renting, we can help you move
           forward.
         </h3>
