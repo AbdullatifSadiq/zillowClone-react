@@ -42,7 +42,7 @@ export const Links = [
         url:'/'
     }, {
         id:9,
-        nav:'Sign In',
+        nav:'Sign in',
         url:'/'
     },
 ]
@@ -51,7 +51,7 @@ export const Services = [
     {
         id :1,
         img :'https://www.zillowstatic.com/s3/homepage/static/Buy_a_home.webp',
-        title:' Buy a Home',
+        title:' Buy a home',
         text:'Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.',
         action: 'Search homes'
 
@@ -59,7 +59,7 @@ export const Services = [
     {
         id :1,
         img :'https://www.zillowstatic.com/s3/homepage/static/Sell_a_home.webp',
-        title:' Sell a Home',
+        title:' Sell a home',
         text:'No matter what path you take to sell your home, we can help you navigate a successful sale.',
         action:'See your options'
 
@@ -67,7 +67,7 @@ export const Services = [
     {
         id :1,
         img :'https://www.zillowstatic.com/s3/homepage/static/Rent_a_home.webp',
-        title:' Rent a Home',
+        title:' Rent a home',
         text:'We’re creating a seamless online experience – from shopping on the largest rental network, to applying, to paying rent.',
         action:'Find rentals'
 
