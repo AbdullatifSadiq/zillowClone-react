@@ -290,7 +290,8 @@ nav {
 
 .footer {
   display: flex;
-  margin-top: 6rem;
+  margin-top: 0;
+  padding: 0 1.5rem;
   background-color: white;
   color: #0a0a14;
   font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
@@ -298,7 +299,7 @@ nav {
   line-height: 1.5rem;
   width: 100%;
   position: absolute;
-  bottom: -185%;
+  bottom: -170%;
 }
 .footer-item {
   font-size: 1rem;
@@ -393,9 +394,9 @@ nav {
     margin-bottom: 1.5rem;
     align-items: center;
     justify-content: center;
-    -webkit-box-shadow: 0px 3px 3px rgb(109, 109, 109);
+    /* -webkit-box-shadow: 0px 3px 3px rgb(109, 109, 109);
     -moz-box-shadow: 0px 3px 3px rgb(109, 109, 109);
-    box-shadow: 0px 3px 3px rgb(109, 109, 109);
+    box-shadow: 0px 3px 3px rgb(109, 109, 109); */
     display: flex;
     flex-flow: row;
     flex-basis: 700px;
