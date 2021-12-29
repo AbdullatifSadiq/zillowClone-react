@@ -8,8 +8,7 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='footerLinks'>
-        {/* <FooterItem footer={footer} /> */}
-        <h1>Hello world</h1>
+        <FooterItem footerItems={footer} />
       </div>
     </div>
   );

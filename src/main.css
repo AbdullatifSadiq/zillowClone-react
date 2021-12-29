@@ -289,21 +289,28 @@ nav {
 }
 
 .footer {
-  display: flex;
   margin-top: 0;
   padding: 0 1.5rem;
   background-color: white;
   color: #0a0a14;
   font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
-  font-weight: 700;
+
   line-height: 1.5rem;
   width: 100%;
   position: absolute;
   bottom: -170%;
 }
 .footer-item {
+  /* flex-direction: row; */
+  font-weight: 500;
   font-size: 1rem;
-  text-align: right;
+  text-align: left;
+  padding: 0 4.2rem 1rem 0;
+}
+
+.footerLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* Tablet version */
