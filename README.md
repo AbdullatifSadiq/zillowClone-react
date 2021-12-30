@@ -16,3 +16,10 @@ Project is created with:
 * HTML
 * CSS 
 * React.js
+
+## Setup
+To Run this application locally, after downloading the zip and unzipping it just open the html file in the folder and everything will run smoothly
+Thank You.
+
+## Live Demo
+[Calculator Javascript](https://calculator-javacript.netlify.app/)
