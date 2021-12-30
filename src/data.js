@@ -1,5 +1,7 @@
 import React from 'react'
 import Service from './Components/Service'
+import { FaSlash } from 'react-icons/fa';
+
 
 export const Links = [
     {
@@ -79,21 +81,22 @@ export const MainFooterLinks = [
     {
         id:1,
         name:'Real Estate',
-        Symbol: 'data:image/svg+xml,%0A%3Csvg%20width%3D%2243px%22%20height%3D%2228px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20%20fill-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20stroke%3D%22%23006AFF%22%20stroke-width%3D%222%22%20d%3D%22M28.657%2012L23%2017.657%2017.343%2012%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E',
+        Symbol: <FaSlash className='bar fa-0.5x'/>,
     },
     {
         id:2,
         name:'Rentals',
-        Symbol: 'data:image/svg+xml,%0A%3Csvg%20width%3D%2243px%22%20height%3D%2228px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20%20fill-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20stroke%3D%22%23006AFF%22%20stroke-width%3D%222%22%20d%3D%22M28.657%2012L23%2017.657%2017.343%2012%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E',
+        Symbol: '',
+
     },
     {
         id:3,
         name:'Mortgage Rates',
-        Symbol: 'data:image/svg+xml,%0A%3Csvg%20width%3D%2243px%22%20height%3D%2228px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20%20fill-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20stroke%3D%22%23006AFF%22%20stroke-width%3D%222%22%20d%3D%22M28.657%2012L23%2017.657%2017.343%2012%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E',
+        Symbol: <FaSlash className='bar'/>,
     },
     {
         id:4,
         name:'Browse Homes',
-        Symbol: 'data:image/svg+xml,%0A%3Csvg%20width%3D%2243px%22%20height%3D%2228px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cg%20fill%3D%22none%22%20%20fill-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20stroke%3D%22%23006AFF%22%20stroke-width%3D%222%22%20d%3D%22M28.657%2012L23%2017.657%2017.343%2012%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E',
+        Symbol: ' ',
     }
 ]

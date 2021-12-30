@@ -6,7 +6,7 @@ const Hero = () => {
     <section className='hero'>
       <div className='center-content'>
         <h3>Change starts here</h3>
-        <div className='search'>
+        <div className='search {{}}'>
           <input
             className='search-box'
             type='text'

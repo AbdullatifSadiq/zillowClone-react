@@ -253,6 +253,7 @@ nav {
   font-weight: 400;
   font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
   margin-top: 1rem;
+  line-height: 1.5rem;
 }
 .card-content {
   width: 100%;
@@ -292,27 +293,47 @@ nav {
   margin-top: 0;
   padding: 0 1.5rem;
   background-color: white;
-  color: #0a0a14;
+  color: #2a2a33;
   font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
-
+  /* font-weight: normal; */
+  height: 10rem;
   line-height: 1.5rem;
   width: 100%;
   position: absolute;
   bottom: -170%;
 }
 .footer-item {
-  /* flex-direction: row; */
-  font-weight: 500;
+  color: #2a2a33;
+  position: relative;
+  display: flex;
+  /* font-weight: lighter; */
   font-size: 1rem;
+  list-style: 24px;
+  font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
   text-align: left;
-  padding: 0 4.2rem 1rem 0;
+  padding: 1rem 4.2rem 1rem 1rem;
+  /* border-right: 1px solid; */
 }
 
 .footerLinks {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-left: 1px;
 }
-
+.arrow {
+  color: #0d4599;
+  position: absolute;
+  left: 80%;
+  top: 30%;
+  font-size: 1.5rem;
+}
+.bar {
+  color: #747474;
+  transform: rotate(232deg);
+  font-size: 1.5rem;
+  position: absolute;
+  left: 95%;
+}
 /* Tablet version */
 @media only screen and (min-width: 768px) {
   .logo img {
