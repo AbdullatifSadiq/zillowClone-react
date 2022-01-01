@@ -23,4 +23,4 @@ To Run this application locally, after downloading the zip and unzipping it just
 Thank You.
 
 ## Live Demo
-[Calculator Javascript](https://calculator-javacript.netlify.app/)
+This section will be update soon.
