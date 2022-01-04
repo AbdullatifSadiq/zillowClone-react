@@ -7,7 +7,7 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
   return (
-    <nav>
+    <nav id='nav'>
       <div className='nav-center'>
         <div className='nav-header'>
           <button className='nav-toggle'>
