@@ -15,7 +15,7 @@ const FooterItem = ({ footerItems }) => {
               </span>
               {Symbol}
             </article>
-            <div></div>
+            {/* <div></div> */}
           </>
         );
       })}

@@ -1,5 +1,11 @@
 import React from 'react';
-import { FaSlash } from 'react-icons/fa';
+import {
+  FaSlash,
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+  FaTwitter,
+} from 'react-icons/fa';
 
 export const Links = [
   {
@@ -93,5 +99,27 @@ export const MainFooterLinks = [
     id: 4,
     name: 'Browse Homes',
     Symbol: ' ',
+  },
+];
+export const SocialMediaLinks = [
+  {
+    id: 1,
+    name: 'Facebook',
+    socialSymbol: <FaFacebook />,
+  },
+  {
+    id: 2,
+    name: 'Instagram',
+    socialSymbol: <FaInstagram />,
+  },
+  {
+    id: 3,
+    name: 'TikTok',
+    socialSymbol: <FaTiktok />,
+  },
+  {
+    id: 4,
+    name: 'Twitter',
+    socialSymbol: <FaTwitter />,
   },
 ];

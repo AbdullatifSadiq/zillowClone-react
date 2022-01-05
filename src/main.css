@@ -314,15 +314,16 @@ nav {
 
 .footer {
   margin-top: 0;
-  padding: 0 1.5rem;
+  padding: 0 1.2rem;
   background-color: white;
   color: #2a2a33;
   font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
-  height: 10rem;
+  height: 45rem;
   line-height: 1.5rem;
   width: 100%;
   position: absolute;
-  bottom: -170%;
+  bottom: -250%;
+  border-bottom: 2px grey;
 }
 .footer-item {
   color: #2a2a33;
@@ -353,6 +354,63 @@ nav {
   font-size: 1.5rem;
   position: absolute;
   left: 95%;
+}
+.footer-essays {
+  border-top: 1px solid grey;
+  padding: 1.5rem 0;
+  margin: auto;
+  text-align: center;
+  height: 36rem;
+}
+.first-message {
+  font-size: 0.57rem;
+  text-align: center;
+  line-height: 1rem !important;
+  color: #54545a;
+  font-family: 'Open Sans', 'Adjusted Arial', Tahoma, Geneva, sans-serif !important;
+  font-weight: 400;
+  margin: 0;
+}
+.second-message-container {
+  margin: 0 1.5rem 1rem;
+}
+.second-message {
+  font-size: 0.57rem;
+  line-height: 1rem !important;
+  font-family: 'Open Sans', 'Adjusted Arial', Tahoma, Geneva, sans-serif !important;
+  color: #54545a;
+  font-weight: 400;
+  margin: 0;
+}
+.contact-link {
+  font-family: 'Open Sans', 'Adjusted Arial', Tahoma, Geneva, sans-serif !important;
+  font-size: 0.9rem;
+  color: #0d4599;
+  text-decoration: underline;
+}
+.third-message {
+  font-size: 0.57rem;
+  text-align: center;
+  line-height: 1rem !important;
+  color: #54545a;
+  font-family: 'Open Sans', 'Adjusted Arial', Tahoma, Geneva, sans-serif !important;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+.socialMedia {
+  color: #006aff;
+  font-size: 1.7rem;
+  height: 1rem;
+}
+.social-area i {
+  /* text-decoration: ; */
+  font-size: 0.7rem;
+  margin-top: 1rem;
+}
+.social-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 /* Tablet version */
 @media only screen and (min-width: 768px) {

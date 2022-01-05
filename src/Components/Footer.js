@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FooterItem from './FooterItem';
+import FooterEssays from './FooterEssays';
 import { MainFooterLinks } from '../data';
 import '../main.css';
 
@@ -10,6 +11,7 @@ const Footer = () => {
       <div className='footerLinks'>
         <FooterItem footerItems={footer} />
       </div>
+      <FooterEssays />
     </div>
   );
 };
