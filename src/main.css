@@ -186,6 +186,7 @@ nav {
   top: 0;
   left: 0;
   padding: 0.8rem;
+  border-bottom: 1px grey;
 }
 .search-1 input {
   border: 0.5px solid;
@@ -210,15 +211,7 @@ nav {
   border-radius: 0.3rem;
   position: relative;
 }
-.search {
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border-radius: 0.3rem;
-  position: relative;
-}
+
 .search-box {
   width: 80%;
   max-width: 100%;
@@ -399,11 +392,14 @@ nav {
     border-right: 1px solid;
     border-radius: -2rem;
   }
+  .search-1 {
+    border-bottom: 1px grey;
+  }
   .search-1 .icon {
     font-size: 1.5rem;
     color: #006aff;
     position: absolute;
-    left: 90%;
+    left: 92%;
   }
   .center-content {
     color: #fff;

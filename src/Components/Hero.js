@@ -2,13 +2,12 @@ import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { useEffect, useRef } from 'react';
 
-
 const Hero = () => {
   const searchRef = useRef(null);
 
   const handleScroll = () => {
     if (searchRef.current.getBoundingClientRect().bottom < 0) {
-      searchRef.current.classList = 'search-1 overlay';
+      searchRef.current.classList = 'search-1';
     }
     if (window.pageYOffset === 0) {
       searchRef.current.classList = 'search-2';
@@ -28,25 +27,25 @@ const Hero = () => {
       <div className='center-content'>
         <h3>Change starts here</h3>
         <div className='search-top'>
-        <div className='search-1' ref={searchRef}>
-          <input
-            className='search-box'
-            type='text'
-            placeholder='Enter an address, neighborhood, city'
+          <div className='search-1' ref={searchRef}>
+            <input
+              className='search-box'
+              type='text'
+              placeholder='Enter an address, neighborhood, city'
             />
-          <FaSearch className='icon' />
-          <div
-            className='search-icon'
-            style={{
-              background: '#fff',
-              width: '17%',
-              height: '3.4rem',
-              borderTopRightRadius: '0.3rem',
-              borderEndEndRadius: '0.3rem',
-            }}
+            <FaSearch className='icon' />
+            <div
+              className='search-icon'
+              style={{
+                background: '#fff',
+                width: '17%',
+                height: '3.4rem',
+                borderTopRightRadius: '0.3rem',
+                borderEndEndRadius: '0.3rem',
+              }}
             ></div>
+          </div>
         </div>
-            </div>
       </div>
     </section>
   );
