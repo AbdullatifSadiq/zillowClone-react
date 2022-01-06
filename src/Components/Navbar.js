@@ -4,7 +4,7 @@ import { Links } from '../data';
 import '../main.css';
 
 const Navbar = () => {
-  const [showLinks, setShowLinks] = useState(false);
+  // const [showLinks, setShowLinks] = useState(false);
 
   return (
     <nav id='nav'>

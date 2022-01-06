@@ -567,10 +567,73 @@ nav {
     background-color: white;
     color: #2a2a33;
     font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
-    height: 10rem;
+    height: 42rem;
     line-height: 1.5rem;
     width: 100%;
     position: absolute;
-    bottom: -70%;
+    bottom: -120%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .logo img {
+    content: url('https://s.zillowstatic.com/pfs/static/z-logo-default.svg');
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    left: 50%;
+    height: 35px;
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+  }
+  nav {
+    box-shadow: var(--light-shadow);
+    background-color: #fff;
+    position: relative;
+    height: 120%;
+    width: 100%;
+  }
+  .nav-header {
+    height: 5rem;
+    width: 1165px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+    /* margin: auto; */
+  }
+  .hero {
+    width: max(100%, 1165px);
+    background-image: url('https://www.zillowstatic.com/s3/homepage/static/_Desktop_Overlay_ChangeStartsHere_HC@2x.webp');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    overflow: hidden;
+  }
+  .center-content {
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 700px;
+    max-width: 1200px;
+    display: block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: absolute;
+    top: 20%;
+    left: 23%;
+  }
+  .center-content h3 {
+    max-width: 100%;
+    text-align: center;
+    font-size: 2.25rem;
   }
 }
