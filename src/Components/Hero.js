@@ -31,7 +31,7 @@ const Hero = () => {
             <input
               className='search-box'
               type='text'
-              placeholder='Enter an address, neighborhood, city'
+              placeholder='Enter an address, neighborhood, city or ZIP Code'
             />
             <FaSearch className='icon' />
             <div

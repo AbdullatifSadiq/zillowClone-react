@@ -123,7 +123,6 @@ nav {
   font-weight: 500;
 }
 .links a {
-  color: #fff;
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -146,7 +145,8 @@ nav {
 }
 .show-container {
   background-color: #fff;
-  height: 10rem;
+  height: 20rem;
+  /* z-index: 5; */
 }
 .hero {
   width: min(100%, 70.5rem);
@@ -220,7 +220,7 @@ nav {
   border-radius: 0.3rem;
   box-shadow: transparent;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: bold;
   border: 0;
   border-right: 1px solid;
@@ -244,16 +244,18 @@ nav {
 .services {
   position: relative;
   position: absolute;
-  top: 54%;
+  top: 65%;
   padding: 4.5rem 0;
 }
 
-.services h3 {
+.services-h3 {
   color: #2a2a33;
   text-align: center;
   line-height: 1.5rem;
   padding: 0 2rem;
   margin-bottom: 2rem;
+  position: absolute;
+  top: 60%;
 }
 .service-card {
   background: white;
@@ -312,7 +314,10 @@ nav {
   left: 27%;
   top: 100%;
 }
-
+.action-btn:hover {
+  background-color: rgb(0, 106, 255);
+  color: white;
+}
 .footer {
   margin-top: 0;
   padding: 0 1.2rem;
@@ -562,6 +567,10 @@ nav {
     left: 0%;
     top: 100%;
   }
+  .action-btn:hover {
+    background-color: rgb(0, 106, 255);
+    color: white;
+  }
   .footer {
     margin-top: 0;
     padding: 0 1.5rem;
@@ -587,30 +596,47 @@ nav {
   }
   .logo {
     position: absolute;
-    left: 43%;
-    top: 45%;
+    left: 40%;
+    top: 50%;
   }
   nav {
     box-shadow: var(--light-shadow);
     background-color: #fff;
     position: relative;
-    height: 100%;
+    height: 5rem;
     width: 100%;
   }
 
   .nav-header {
-    height: 5rem;
-    width: 1593px;
+    height: 100%;
+    width: 100%;
     max-width: 100%;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
     position: relative;
   }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', Gotham, gotham, Tahoma, Geneva, sans-serif;
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
   .hero {
-    width: max(100%, 1165px);
+    width: 100%;
+    /* max(100%, 1165px); */
     background-image: url('https://www.zillowstatic.com/s3/homepage/static/_Desktop_Overlay_ChangeStartsHere_HC@2x.webp');
     background-repeat: no-repeat;
     background-position-y: center;
@@ -632,7 +658,7 @@ nav {
     margin-right: 2rem;
     position: absolute;
     top: 20%;
-    left: 23%;
+    left: 15%;
   }
   .center-content h3 {
     max-width: 100%;
@@ -650,21 +676,52 @@ nav {
     position: absolute;
     top: 65%;
   }
+  .search-1 {
+    width: 100%;
+    height: 4.25rem;
+    display: flex;
+    background-color: #f6f6fa;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    padding: 0.8rem;
+    border-bottom: 1px grey;
+  }
+  .search-1 input {
+    border: 0.5px solid;
+    width: 40%;
+    height: 2.5rem;
+    padding: 18px 9px 18px 9px;
+    margin: 12px auto;
+    background-color: #f6f6fa;
+    position: absolute;
+    left: 30%;
+  }
+  .search-1 .icon {
+    font-size: 1.5rem;
+    color: #006aff;
+    position: absolute;
+    left: 67%;
+  }
   .services-h3 {
     color: #2a2a33;
     text-align: center;
     justify-content: center;
     line-height: 1.5rem;
-    padding: 0 16rem;
+    padding: 0 9rem;
     margin-bottom: 2rem;
     position: absolute;
-    top: 20%;
-    left: 3%;
+    top: 80%;
+    left: 19%;
   }
   .services {
     position: absolute;
-    top: 70%;
-    padding: 4.5rem 3rem;
+    top: 80%;
+    padding: 4.5rem 4rem;
     display: flex;
     column-gap: 2rem;
   }
@@ -676,6 +733,16 @@ nav {
     margin-bottom: 1.5rem;
     display: block;
     z-index: 0;
+  }
+  .service-card:hover {
+    width: 110%;
+    height: 30rem;
+    transform: scale(1.04, 1.04);
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-box-shadow: 0 0 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
   }
   .service-card img {
     width: 100%;
@@ -754,5 +821,32 @@ nav {
     width: 100%;
     position: absolute;
     bottom: -150%;
+  }
+  .footerLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-left: 1px;
+    padding: 2rem 12rem 2rem 12rem;
+  }
+  .footer-item {
+    color: #2a2a33;
+    position: relative;
+    display: flex;
+    font-size: 1.2rem;
+    list-style: 24px;
+    font-family: 'Open Sans', Tahoma, Geneva, sans-serif;
+    text-align: left;
+    padding: 1rem 4.2rem 1rem 1rem;
+  }
+  .footer-essays {
+    border-top: 1px solid grey;
+    padding: 1.5rem 25rem;
+    margin: auto;
+    text-align: center;
+    height: 36rem;
+  }
+  .action-btn:hover {
+    background-color: rgb(0, 106, 255);
+    color: white;
   }
 }

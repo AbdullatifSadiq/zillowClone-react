@@ -4,7 +4,11 @@ import { Links } from '../data';
 import '../main.css';
 
 const Navbar = () => {
-  // const [showLinks, setShowLinks] = useState(false);
+  const [showLinks, setShowLinks] = useState(false);
+
+  const toogleLinks = () => {
+    setShowLinks(!showLinks);
+  };
 
   return (
     <nav id='nav'>
@@ -25,6 +29,18 @@ const Navbar = () => {
               Sign In
             </a>
           </span>
+          {/* <div className='links-container show-container'>
+            <ul className='links'>
+              {Links.map((link) => {
+                const { id, nav, url } = link;
+                return (
+                  <li key={id}>
+                    <a href={url}>{nav}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div> */}
         </div>
       </div>
     </nav>
