@@ -10,6 +10,12 @@ import { FiChevronDown } from 'react-icons/fi';
 
 export const Links = [
   {
+    id: 0,
+    nav: '',
+    url: '/',
+    linkSymbol: <FiChevronDown />,
+  },
+  {
     id: 1,
     nav: 'Buy',
     url: '/',
@@ -43,7 +49,7 @@ export const Links = [
     id: 6,
     nav: 'Manage Rentals',
     url: '/',
-    linkSymbol: <FiChevronDown />,
+    // linkSymbol: <FiChevronDown />,
   },
   {
     id: 7,
