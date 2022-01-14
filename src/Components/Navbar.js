@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { Links } from '../data';
 import '../main.css';
+import ShowLinks from './ShowLinks';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -15,7 +16,11 @@ const Navbar = () => {
       <div className='nav-center'>
         <div className='nav-header'>
           <button className='nav-toggle'>
-            <FaBars style={{ color: '#fff', fontSize: '20px' }} />
+            <FaBars
+              style={{ color: '#fff', fontSize: '20px' }}
+              className='nav-toggle'
+              onClick={toogleLinks}
+            />
           </button>
           <span className='logo'>
             <img
@@ -29,19 +34,20 @@ const Navbar = () => {
               Sign In
             </a>
           </span>
-          {/* <div className='links-container show-container'>
-            <ul className='links'>
-              {Links.map((link) => {
-                const { id, nav, url } = link;
-                return (
-                  <li key={id}>
-                    <a href={url}>{nav}</a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div> */}
         </div>
+        <div className='links-container show-container'>
+          <ul className='links'>
+            {Links.map((link) => {
+              const { id, nav, url } = link;
+              return (
+                <li key={id}>
+                  <a href={url}>{nav}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        {showLinks && <ShowLinks />}
       </div>
     </nav>
   );

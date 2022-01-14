@@ -6,47 +6,56 @@ import {
   FaTiktok,
   FaTwitter,
 } from 'react-icons/fa';
+import { FiChevronDown } from 'react-icons/fi';
 
 export const Links = [
   {
     id: 1,
     nav: 'Buy',
     url: '/',
+    linkSymbol: <FiChevronDown />,
   },
   {
     id: 2,
     nav: 'Sell',
     url: '/',
+    linkSymbol: <FiChevronDown />,
   },
   {
     id: 3,
     nav: 'Rent',
     url: '/',
+    linkSymbol: <FiChevronDown />,
   },
   {
     id: 4,
     nav: 'Home Loans',
     url: '/',
+    linkSymbol: <FiChevronDown />,
   },
   {
     id: 5,
     nav: 'Agent Finder',
     url: '/',
+    linkSymbol: <FiChevronDown />,
   },
   {
     id: 6,
     nav: 'Manage Rentals',
     url: '/',
+    linkSymbol: <FiChevronDown />,
   },
   {
     id: 7,
     nav: 'Advertise',
     url: '/',
+    // linkSymbol: <FiChevronDown />,
   },
   {
     id: 8,
     nav: 'Help',
     url: '/',
+    // linkSymbol: <FiChevronDown />,
   },
   // {
   //   id: 9,
