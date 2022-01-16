@@ -13,16 +13,30 @@ const Navbar = () => {
         <div className='nav-center'>
           <div className='nav-header'>
             <div className='links-container show-container'>
-              <ul className='links'>
-                {Links.map((link) => {
-                  const { id, nav, url } = link;
-                  return (
-                    <li key={id}>
-                      <a href={url}>{nav}</a>
-                    </li>
-                  );
-                })}
-              </ul>
+              <div className='first-set'>
+                <ul className='links'>
+                  {Links.slice(1, 6).map((link) => {
+                    const { id, nav, url } = link;
+                    return (
+                      <li key={id}>
+                        <a href={url}>{nav}</a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+              <div className='second-set'>
+                <ul className='links'>
+                  {Links.slice(6, 9).map((link) => {
+                    const { id, nav, url } = link;
+                    return (
+                      <li key={id}>
+                        <a href={url}>{nav}</a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             </div>
             <button className='nav-toggle'>
               <FaBars

@@ -693,7 +693,7 @@ nav {
   .logo {
     position: absolute;
     left: 40%;
-    top: 50%;
+    top: 40%;
   }
   nav {
     box-shadow: var(--light-shadow);
@@ -738,7 +738,7 @@ nav {
     font-family: 'Open Sans', Gotham, gotham, Tahoma, Geneva, sans-serif;
   }
   .links a {
-    /* color: #2a2a33; */
+    color: #2a2a33;
     font-size: 1.2rem;
     font-family: 'Open Sans', Gotham, gotham, Tahoma, Geneva, sans-serif;
     padding: 0;
@@ -747,6 +747,16 @@ nav {
   .links a:hover {
     padding: 0;
     background: transparent;
+  }
+  .first-set {
+    position: absolute;
+    left: 5%;
+    color: #2a2a33;
+  }
+  .second-set {
+    position: absolute;
+    left: 65%;
+    color: #2a2a33;
   }
   .hero {
     width: 100%;
