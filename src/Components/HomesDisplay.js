@@ -5,7 +5,7 @@ const HomesDisplay = () => {
     <>
       <div className='empty-space'></div>
       <div className='search-nav'>search nav</div>
-      <div className='variables-nav'></div>
+      <div className='variables-nav'>variable's nav</div>
       <div className='homes'></div>
     </>
   );
