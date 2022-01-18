@@ -4,7 +4,7 @@ const HomesDisplay = () => {
   return (
     <>
       <div className='empty-space'></div>
-      <div className='search-nav'></div>
+      <div className='search-nav'>search nav</div>
       <div className='variables-nav'></div>
       <div className='homes'></div>
     </>
