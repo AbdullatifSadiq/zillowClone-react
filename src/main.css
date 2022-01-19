@@ -468,6 +468,9 @@ nav {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.empty-space {
+}
 /* Tablet version */
 @media only screen and (min-width: 768px) {
   .logo img {
