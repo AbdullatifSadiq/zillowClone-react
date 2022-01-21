@@ -488,6 +488,18 @@ nav {
   border: 1px solid rgb(167, 166, 171);
   border-radius: -2rem;
 }
+.variables-nav {
+  display: flex;
+  /* align-content: center; */
+  padding-block: 0.7rem;
+  justify-content: space-around;
+}
+.rent-sale-btn {
+  /* margin-inline: 0.3rem; */
+  padding-inline: 0.6rem;
+  height: 37px;
+  min-width: 44px;
+}
 /* Tablet version */
 @media only screen and (min-width: 768px) {
   .logo img {

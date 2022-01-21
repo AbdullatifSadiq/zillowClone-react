@@ -42,13 +42,22 @@ const HomesDisplay = () => {
               color: '#006aff',
               fontSize: '0.9rem',
               paddingInline: '0.6rem',
+              fontFamily:
+                'Open Sans, Adjusted Arial, Tahoma, Geneva, sans-serif !important',
             }}
           >
             Sign In
           </a>
         </span>
       </div>
-      <div className='variables-nav'>variable's nav</div>
+      <div className='variables-nav'>
+        <button className='rent-sale-btn'>For Rent</button>
+        <button className='rent-sale-btn'>Price</button>
+        <button className='rent-sale-btn'>More</button>
+        <button className='rent-sale-btn' style={{ border: '0px' }}>
+          Save search
+        </button>
+      </div>
       <div className='homes'>Home Components</div>
     </>
   );
