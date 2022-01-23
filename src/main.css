@@ -490,15 +490,19 @@ nav {
 }
 .variables-nav {
   display: flex;
-  /* align-content: center; */
   padding-block: 0.7rem;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 .rent-sale-btn {
-  /* margin-inline: 0.3rem; */
   padding-inline: 0.6rem;
-  height: 37px;
+  margin-inline: 0.2rem;
+  height: 30px;
   min-width: 44px;
+  border: 0.05rem solid gray;
+  border-radius: 0.2rem;
+  background-color: transparent;
+  /* width: 80%; */
 }
 /* Tablet version */
 @media only screen and (min-width: 768px) {

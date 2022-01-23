@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
+import { FaCircle } from 'react-icons/fa';
 
 const HomesDisplay = () => {
   return (
@@ -51,10 +52,19 @@ const HomesDisplay = () => {
         </span>
       </div>
       <div className='variables-nav'>
-        <button className='rent-sale-btn'>For Rent</button>
-        <button className='rent-sale-btn'>Price</button>
-        <button className='rent-sale-btn'>More</button>
-        <button className='rent-sale-btn' style={{ border: '0px' }}>
+        <button className='rent-sale-btn' style={{ width: '28%' }}>
+          <FaCircle style={{ fontSize: '0.7rem', color: '#9434E3' }} /> For Rent
+        </button>
+        <button className='rent-sale-btn' style={{ width: '20%' }}>
+          Price
+        </button>
+        <button className='rent-sale-btn' style={{ width: '20%' }}>
+          More
+        </button>
+        <button
+          className='rent-sale-btn'
+          style={{ border: '0px', backgroundColor: 'transparent' }}
+        >
           Save search
         </button>
       </div>
