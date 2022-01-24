@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { FaCircle } from 'react-icons/fa';
 
@@ -52,6 +52,7 @@ const HomesDisplay = () => {
         </span>
       </div>
       <div className='variables-nav'>
+        {/* make this part dynamic to container for 'For Sale' as well */}
         <button className='rent-sale-btn' style={{ width: '28%' }}>
           <FaCircle style={{ fontSize: '0.7rem', color: '#9434E3' }} /> For Rent
         </button>
@@ -68,7 +69,9 @@ const HomesDisplay = () => {
           Save search
         </button>
       </div>
-      <div className='homes'>Home Components</div>
+      <div className='homes'>
+        <div className='home-card'>Home Components</div>
+      </div>
     </>
   );
 };

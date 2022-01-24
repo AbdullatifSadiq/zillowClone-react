@@ -470,17 +470,20 @@ nav {
 }
 
 .search-nav {
+  background-color: #fff;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 60px;
   padding: 0 10px;
 }
 .search-box-homes {
+  background-color: #fff;
   width: 60%;
   max-width: 70%;
   border-radius: 0.2em;
   box-shadow: transparent;
-  padding: 0.3rem;
+  padding: 0.3rem 0.5rem;
   font-size: 1rem;
   color: rgb(68, 68, 68);
   /* font-weight: bold; */
@@ -489,6 +492,7 @@ nav {
   border-radius: -2rem;
 }
 .variables-nav {
+  background-color: #fff;
   display: flex;
   padding-block: 0.7rem;
   align-items: center;
