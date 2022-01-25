@@ -513,8 +513,11 @@ nav {
   display: block;
 }
 .homes > h4 {
-  padding: 1.5rem;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 1rem;
   margin: 0;
+  font-weight: 600;
 }
 .home-card {
   background-color: #fff;
@@ -539,6 +542,7 @@ nav {
   width: 375px;
   position: absolute;
   top: 70%;
+  border-bottom: 4px solid #006aff;
 }
 .card-info > h4 {
   font-weight: 600;
