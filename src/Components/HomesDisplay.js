@@ -70,7 +70,22 @@ const HomesDisplay = () => {
         </button>
       </div>
       <div className='homes'>
-        <div className='home-card'>Home Components</div>
+        <h4>State name</h4>
+        <article className='home-card'>
+          <img
+            className='home-img'
+            src='https://photos.zillowstatic.com/fp/229ac71804359a22c5aec769394c35f0-p_e.jpg'
+            alt=''
+          />
+          <div className='card-info'>
+            <h4>$2,200/mon</h4>
+            <p className='utilities'>
+              {' '}
+              2 bd 1 ba 900 sqft - Apartment for rent
+            </p>
+            <p className='location'>1042 W Roscoe St, Chicago, IL 60657</p>
+          </div>
+        </article>
       </div>
     </>
   );
