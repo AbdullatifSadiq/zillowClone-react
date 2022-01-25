@@ -497,12 +497,13 @@ nav {
   justify-content: center;
 }
 .rent-sale-btn {
+  color: #006aff;
   padding-inline: 0.6rem;
   margin-inline: 0.2rem;
   height: 30px;
   min-width: 44px;
-  border: 0.05rem solid gray;
-  border-radius: 0.2rem;
+  border: 0.05rem solid #006aff;
+  border-radius: 0.1rem;
   background-color: transparent;
 }
 .homes {

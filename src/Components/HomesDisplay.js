@@ -53,7 +53,7 @@ const HomesDisplay = () => {
       </div>
       <div className='variables-nav'>
         {/* make this part dynamic to container for 'For Sale' as well */}
-        <button className='rent-sale-btn' style={{ width: '28%' }}>
+        <button className='rent-sale-btn' style={{ width: '25%' }}>
           <FaCircle style={{ fontSize: '0.7rem', color: '#9434E3' }} /> For Rent
         </button>
         <button className='rent-sale-btn' style={{ width: '20%' }}>
