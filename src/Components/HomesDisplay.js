@@ -70,7 +70,11 @@ const HomesDisplay = () => {
         </button>
       </div>
       <div className='homes'>
-        <h4>State name</h4>
+        <div className='homes-title'>
+          <h4>State name</h4>
+          <h5>4,1234 results</h5>
+          <h5>Sorted by nearest</h5>
+        </div>
         <article className='home-card'>
           <img
             className='home-img'
