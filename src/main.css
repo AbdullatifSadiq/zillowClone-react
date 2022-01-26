@@ -512,13 +512,33 @@ nav {
   background-color: #fff;
   position: relative;
   display: block;
+  height: 812px;
 }
-.homes > h4 {
+.home-title {
+  position: relative;
+}
+.home-title > h4 {
   font-size: 20px;
   line-height: 26px;
-  padding: 1rem;
-  margin: 0;
   font-weight: 600;
+  margin: 0.5rem;
+}
+.randoms {
+  position: relative;
+  display: flex;
+  padding-inline: 0.5rem;
+  margin: 0 0.5rem 2rem 0.5rem;
+  font-weight: lighter;
+}
+.one {
+  position: absolute;
+  left: 0%;
+  justify-content: start;
+}
+.two {
+  position: absolute;
+  left: 60%;
+  justify-content: end;
 }
 .home-card {
   background-color: #fff;

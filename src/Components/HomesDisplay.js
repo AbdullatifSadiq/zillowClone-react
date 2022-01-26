@@ -3,6 +3,24 @@ import { FaBars } from 'react-icons/fa';
 import { FaCircle } from 'react-icons/fa';
 
 const HomesDisplay = () => {
+  useEffect(() => {
+    fetch(
+      'https://us-real-estate.p.rapidapi.com/v2/property-detail?property_id=3199790641',
+      {
+        // method: 'GET',
+        headers: {
+          'x-rapidapi-host': 'us-real-estate.p.rapidapi.com',
+          'x-rapidapi-key':
+            'd89e4bde5bmsh90cc0f883ac166ep19f21fjsnb57bfbd61796',
+        },
+      }
+    ).then((response) => {
+      console.log(response);
+    });
+    // .catch((err) => {
+    //   console.error(err);
+    // });
+  });
   return (
     <>
       <div className='search-nav'>
@@ -70,10 +88,12 @@ const HomesDisplay = () => {
         </button>
       </div>
       <div className='homes'>
-        <div className='homes-title'>
+        <div className='home-title'>
           <h4>State name</h4>
-          <h5>4,1234 results</h5>
-          <h5>Sorted by nearest</h5>
+          <div className='randoms'>
+            <h5 className='one'>4,1234 results</h5>
+            <h5 className='two'>Sorted by nearest</h5>
+          </div>
         </div>
         <article className='home-card'>
           <img
