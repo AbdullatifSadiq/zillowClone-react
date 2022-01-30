@@ -7,11 +7,11 @@ const HomesDisplay = () => {
     fetch(
       'https://us-real-estate.p.rapidapi.com/v2/property-detail?property_id=3199790641',
       {
-        // method: 'GET',
+        method: 'GET',
         headers: {
           'x-rapidapi-host': 'us-real-estate.p.rapidapi.com',
           'x-rapidapi-key':
-            'd89e4bde5bmsh90cc0f883ac166ep19f21fjsnb57bfbd61796',
+            '47b3ac660fmshae44528d370f65fp1d52dbjsn10d2752ca9ea',
         },
       }
     ).then((response) => {
