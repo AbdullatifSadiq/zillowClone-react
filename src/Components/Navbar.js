@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { Links } from '../data';
 import '../main.css';
@@ -19,7 +20,7 @@ const Navbar = () => {
                     const { id, nav, url } = link;
                     return (
                       <li key={id}>
-                        <a href={url}>{nav}</a>
+                        <Link to='/homes'>{nav}</Link>
                       </li>
                     );
                   })}
@@ -31,7 +32,7 @@ const Navbar = () => {
                     const { id, nav, url } = link;
                     return (
                       <li key={id}>
-                        <a href={url}>{nav}</a>
+                        <Link to='/'>{nav}</Link>
                       </li>
                     );
                   })}
@@ -45,13 +46,15 @@ const Navbar = () => {
                 onClick={() => setShowLinks(true)}
               />
             </button>
-            <span className='logo'>
-              <img
-                style={{ alignSelf: 'center' }}
-                src='https://s.zillowstatic.com/pfs/static/z-logo-white.svg'
-                alt='zillow logo'
-              />
-            </span>
+            <Link to='/'>
+              <span className='logo'>
+                <img
+                  style={{ alignSelf: 'center' }}
+                  src='https://s.zillowstatic.com/pfs/static/z-logo-white.svg'
+                  alt='zillow logo'
+                />
+              </span>
+            </Link>
             <span>
               <a href='/' className='links'>
                 Sign In

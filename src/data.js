@@ -72,21 +72,21 @@ export const Links = [
 
 export const Services = [
   {
-    id: 1,
+    id: 9,
     img: 'https://www.zillowstatic.com/s3/homepage/static/Buy_a_home.webp',
     title: ' Buy a home',
     text: 'Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.',
     action: 'Search homes',
   },
   {
-    id: 1,
+    id: 10,
     img: 'https://www.zillowstatic.com/s3/homepage/static/Sell_a_home.webp',
     title: ' Sell a home',
     text: 'No matter what path you take to sell your home, we can help you navigate a successful sale.',
     action: 'See your options',
   },
   {
-    id: 1,
+    id: 11,
     img: 'https://www.zillowstatic.com/s3/homepage/static/Rent_a_home.webp',
     title: ' Rent a home',
     text: 'We’re creating a seamless online experience – from shopping on the largest rental network, to applying, to paying rent.',
@@ -96,44 +96,44 @@ export const Services = [
 
 export const MainFooterLinks = [
   {
-    id: 1,
+    id: 12,
     name: 'Real Estate',
     Symbol: <FaSlash className='bar fa-0.5x' />,
   },
   {
-    id: 2,
+    id: 13,
     name: 'Rentals',
     Symbol: '',
   },
   {
-    id: 3,
+    id: 14,
     name: 'Mortgage Rates',
     Symbol: <FaSlash className='bar' />,
   },
   {
-    id: 4,
+    id: 15,
     name: 'Browse Homes',
     Symbol: ' ',
   },
 ];
 export const SocialMediaLinks = [
   {
-    id: 1,
+    id: 16,
     name: 'Facebook',
     socialSymbol: <FaFacebook />,
   },
   {
-    id: 2,
+    id: 17,
     name: 'Instagram',
     socialSymbol: <FaInstagram />,
   },
   {
-    id: 3,
+    id: 18,
     name: 'TikTok',
     socialSymbol: <FaTiktok />,
   },
   {
-    id: 4,
+    id: 19,
     name: 'Twitter',
     socialSymbol: <FaTwitter />,
   },

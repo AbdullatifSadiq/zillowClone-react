@@ -13,7 +13,7 @@ const FooterEssays = () => {
         seek an accommodation.
       </p>
       <br></br>
-      <p className='second-message-container'>
+      <div className='second-message-container'>
         <p className='second-message'>
           Zillow, Inc. holds real estate brokerage licenses in multiple states.
           Zillow (Canada), Inc. holds real estate brokerage licenses in multiple
@@ -32,8 +32,8 @@ const FooterEssays = () => {
         >
           California DRE #1522444
         </p>
-      </p>
-      <a href='' className='contact-link'>
+      </div>
+      <a href='/' className='contact-link'>
         Contact Zillow, Inc. Brokerage
       </a>
       <br></br>
@@ -59,7 +59,7 @@ const FooterEssays = () => {
       <div className='social-area'>
         <i>Follow us:</i>
         {SocialMediaLinks.map((social) => {
-          const { id, name, socialSymbol } = social;
+          const { id, socialSymbol } = social;
           return (
             <div key={id} className='socialMedia'>
               {socialSymbol}

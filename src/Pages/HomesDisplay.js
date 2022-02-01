@@ -3,24 +3,22 @@ import { FaBars } from 'react-icons/fa';
 import { FaCircle } from 'react-icons/fa';
 
 const HomesDisplay = () => {
-  useEffect(() => {
-    fetch(
-      'https://us-real-estate.p.rapidapi.com/v2/property-detail?property_id=3199790641',
-      {
-        method: 'GET',
-        headers: {
-          'x-rapidapi-host': 'us-real-estate.p.rapidapi.com',
-          'x-rapidapi-key':
-            '47b3ac660fmshae44528d370f65fp1d52dbjsn10d2752ca9ea',
-        },
-      }
-    ).then((response) => {
-      console.log(response);
-    });
-    // .catch((err) => {
-    //   console.error(err);
-    // });
-  });
+  // useEffect(() => {
+  //   fetch(
+  //     'https://us-real-estate.p.rapidapi.com/v2/property-detail?property_id=3199790641',
+  //     {
+  //       method: 'GET',
+  //       headers: {
+  //         'x-rapidapi-host': 'us-real-estate.p.rapidapi.com',
+  //         'x-rapidapi-key':
+  //           '47b3ac660fmshae44528d370f65fp1d52dbjsn10d2752ca9ea',
+  //       },
+  //     }
+  //   ).then((response) => {
+  //     console.log(response);
+  //   });
+ 
+  // });
   return (
     <>
       <div className='search-nav'>
