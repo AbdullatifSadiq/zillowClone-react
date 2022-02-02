@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import HomesDisplay from './Pages/HomesDisplay';
+import HomesForSale from './Pages/HomesForSale';
+import HomesForRent from './Pages/HomesForRent';
+
 import MainPage from './Pages/MainPage';
 import Error from './Pages/Error';
-
-import Navbar from './Components/Navbar';
 
 import './main.css';
 
@@ -13,10 +13,11 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route exact path='/' element={<MainPage />} />
-          <Route exact path='/homes' element={<HomesDisplay />} />
+          <Route exact path='/homesForSale' element={<HomesForSale />} />
+          <Route exact path='/homesForRent' element={<HomesForRent />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </Router>

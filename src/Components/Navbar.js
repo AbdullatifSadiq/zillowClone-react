@@ -20,7 +20,7 @@ const Navbar = () => {
                     const { id, nav, url } = link;
                     return (
                       <li key={id}>
-                        <Link to='/homes'>{nav}</Link>
+                        <Link to={url}>{nav}</Link>
                       </li>
                     );
                   })}
@@ -32,7 +32,7 @@ const Navbar = () => {
                     const { id, nav, url } = link;
                     return (
                       <li key={id}>
-                        <Link to='/'>{nav}</Link>
+                        <Link to={url}>{nav}</Link>
                       </li>
                     );
                   })}
@@ -46,7 +46,7 @@ const Navbar = () => {
                 onClick={() => setShowLinks(true)}
               />
             </button>
-            <Link to='/'>
+            <Link to='/homes'>
               <span className='logo'>
                 <img
                   style={{ alignSelf: 'center' }}

@@ -1,13 +1,15 @@
 import React from 'react';
 import { FiChevronDown } from 'react-icons/fi';
+import { MainFooterLinks } from '../data';
+
 
 const FooterItem = ({ footerItems }) => {
   return (
     <>
-      {footerItems.map((item) => {
+      {MainFooterLinks.map((item) => {
         const { id, name, Symbol } = item;
         return (
-          <>
+        
             <article key={id} className='footer-item'>
               <h5>{name}</h5>
               <span>
@@ -15,8 +17,7 @@ const FooterItem = ({ footerItems }) => {
               </span>
               {Symbol}
             </article>
-            {/* <div></div> */}
-          </>
+          
         );
       })}
     </>

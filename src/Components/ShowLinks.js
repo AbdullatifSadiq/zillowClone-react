@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Links } from '../data';
 import { FiChevronDown } from 'react-icons/fi';
@@ -32,16 +33,16 @@ const ShowLinks = ({ onClose }) => {
           const { id, nav, url, linkSymbol } = link;
           return (
             <div className='mobile-link-container'>
-              <>
+            
                 <div className='mobile-link'>
                   <ul>
                     <li key={id}>
-                      <a href={url}>{nav}</a>
+                      <Link to={url}>{nav}</Link>
                     </li>
                   </ul>
                 </div>
                 <div className='mobile-link-arrow'>{linkSymbol}</div>
-              </>
+              
             </div>
           );
         })}
