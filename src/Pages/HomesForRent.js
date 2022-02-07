@@ -17,7 +17,7 @@ const HomesDisplay = () => {
   //   ).then((response) => {
   //     console.log(response);
   //   });
- 
+
   // });
   return (
     <>
@@ -93,21 +93,68 @@ const HomesDisplay = () => {
             <h5 className='two'>Sorted by nearest</h5>
           </div>
         </div>
-        <article className='home-card'>
-          <img
-            className='home-img'
-            src='https://photos.zillowstatic.com/fp/229ac71804359a22c5aec769394c35f0-p_e.jpg'
-            alt=''
-          />
-          <div className='card-info'>
-            <h4>$2,200/mon</h4>
-            <p className='utilities'>
-              {' '}
-              2 bd 1 ba 900 sqft - Apartment for rent
-            </p>
-            <p className='location'>1042 W Roscoe St, Chicago, IL 60657</p>
-          </div>
-        </article>
+        <div className='home-cards'>
+          <article className='home-card'>
+            <img
+              className='home-img'
+              src='https://photos.zillowstatic.com/fp/229ac71804359a22c5aec769394c35f0-p_e.jpg'
+              alt=''
+            />
+            <div className='card-info'>
+              <h4>$2,200/mon</h4>
+              <p className='utilities'>
+                {' '}
+                2 bd 1 ba 900 sqft - Apartment for rent
+              </p>
+              <p className='location'>1042 W Roscoe St, Chicago, IL 60657</p>
+            </div>
+          </article>
+          <article className='home-card'>
+            <img
+              className='home-img'
+              src='https://photos.zillowstatic.com/fp/229ac71804359a22c5aec769394c35f0-p_e.jpg'
+              alt=''
+            />
+            <div className='card-info'>
+              <h4>$2,200/mon</h4>
+              <p className='utilities'>
+                {' '}
+                2 bd 1 ba 900 sqft - Apartment for rent
+              </p>
+              <p className='location'>1042 W Roscoe St, Chicago, IL 60657</p>
+            </div>
+          </article>
+          <article className='home-card'>
+            <img
+              className='home-img'
+              src='https://photos.zillowstatic.com/fp/229ac71804359a22c5aec769394c35f0-p_e.jpg'
+              alt=''
+            />
+            <div className='card-info'>
+              <h4>$2,200/mon</h4>
+              <p className='utilities'>
+                {' '}
+                2 bd 1 ba 900 sqft - Apartment for rent
+              </p>
+              <p className='location'>1042 W Roscoe St, Chicago, IL 60657</p>
+            </div>
+          </article>
+          <article className='home-card'>
+            <img
+              className='home-img'
+              src='https://photos.zillowstatic.com/fp/229ac71804359a22c5aec769394c35f0-p_e.jpg'
+              alt=''
+            />
+            <div className='card-info'>
+              <h4>$2,200/mon</h4>
+              <p className='utilities'>
+                {' '}
+                2 bd 1 ba 900 sqft - Apartment for rent
+              </p>
+              <p className='location'>1042 W Roscoe St, Chicago, IL 60657</p>
+            </div>
+          </article>
+        </div>
       </div>
     </>
   );
