@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { FaCircle } from 'react-icons/fa';
+import { HomesForRent } from '../data';
 
 const HomesDisplay = () => {
   // useEffect(() => {
@@ -89,71 +90,41 @@ const HomesDisplay = () => {
         <div className='home-title'>
           <h4>State name</h4>
           <div className='randoms'>
-            <h5 className='one'>4,1234 results</h5>
+            <h5 className='one'>{HomesForRent.length} results</h5>
             <h5 className='two'>Sorted by nearest</h5>
           </div>
         </div>
         <div className='home-cards'>
-          <article className='home-card'>
-            <img
-              className='home-img'
-              src='https://photos.zillowstatic.com/fp/229ac71804359a22c5aec769394c35f0-p_e.jpg'
-              alt=''
-            />
-            <div className='card-info'>
-              <h4>$2,200/mon</h4>
-              <p className='utilities'>
-                {' '}
-                2 bd 1 ba 900 sqft - Apartment for rent
-              </p>
-              <p className='location'>1042 W Roscoe St, Chicago, IL 60657</p>
-            </div>
-          </article>
-          <article className='home-card'>
-            <img
-              className='home-img'
-              src='https://photos.zillowstatic.com/fp/229ac71804359a22c5aec769394c35f0-p_e.jpg'
-              alt=''
-            />
-            <div className='card-info'>
-              <h4>$2,200/mon</h4>
-              <p className='utilities'>
-                {' '}
-                2 bd 1 ba 900 sqft - Apartment for rent
-              </p>
-              <p className='location'>1042 W Roscoe St, Chicago, IL 60657</p>
-            </div>
-          </article>
-          <article className='home-card'>
-            <img
-              className='home-img'
-              src='https://photos.zillowstatic.com/fp/229ac71804359a22c5aec769394c35f0-p_e.jpg'
-              alt=''
-            />
-            <div className='card-info'>
-              <h4>$2,200/mon</h4>
-              <p className='utilities'>
-                {' '}
-                2 bd 1 ba 900 sqft - Apartment for rent
-              </p>
-              <p className='location'>1042 W Roscoe St, Chicago, IL 60657</p>
-            </div>
-          </article>
-          <article className='home-card'>
-            <img
-              className='home-img'
-              src='https://photos.zillowstatic.com/fp/229ac71804359a22c5aec769394c35f0-p_e.jpg'
-              alt=''
-            />
-            <div className='card-info'>
-              <h4>$2,200/mon</h4>
-              <p className='utilities'>
-                {' '}
-                2 bd 1 ba 900 sqft - Apartment for rent
-              </p>
-              <p className='location'>1042 W Roscoe St, Chicago, IL 60657</p>
-            </div>
-          </article>
+          {HomesForRent.map((home) => {
+            const {
+              id,
+              price,
+              img,
+              beds,
+              baths,
+              sqft,
+              address,
+              city,
+              state,
+              zip,
+            } = home;
+
+            return (
+              <article key={id} className='home-card'>
+                <img className='home-img' src={img} alt='img' />
+                <div className='card-info'>
+                  <h4>{price}/mon</h4>
+                  <p className='utilities'>
+                    {' '}
+                    {beds} bd {baths} ba {sqft} sqft - Apartment for rent
+                  </p>
+                  <p className='location'>
+                    {address}, {city}, {state} {zip}
+                  </p>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </>
