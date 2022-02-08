@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { FaCircle } from 'react-icons/fa';
+import FooterEssays from '../Components/FooterEssays';
 import { HomesForRent } from '../data';
 
 const HomesDisplay = () => {
@@ -88,7 +89,9 @@ const HomesDisplay = () => {
       </div>
       <div className='homes'>
         <div className='home-title'>
-          <h4>State name</h4>
+          <h4>
+            {HomesForRent.city} {HomesForRent.state} Rental Listings
+          </h4>
           <div className='randoms'>
             <h5 className='one'>{HomesForRent.length} results</h5>
             <h5 className='two'>Sorted by nearest</h5>
@@ -127,6 +130,7 @@ const HomesDisplay = () => {
           })}
         </div>
       </div>
+      <FooterEssays />
     </>
   );
 };

@@ -1,8 +1,9 @@
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
-import { useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const Hero = () => {
+  const [location, setLocation] = useState('');
   const searchRef = useRef(null);
 
   const handleScroll = () => {
@@ -22,6 +23,10 @@ const Hero = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   });
+
+  const search = () => {
+    console.log(location);
+  };
   return (
     <section className='hero'>
       <div className='center-content'>
@@ -29,11 +34,15 @@ const Hero = () => {
         <div className='search-top'>
           <div className='search-1' ref={searchRef}>
             <input
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
               className='search-box'
               type='text'
-              placeholder='Enter an address, neighborhood, city or ZIP Code'
+              placeholder='Enter the name of city'
             />
+            {/* <button  onSubmit={search}> */}
             <FaSearch className='icon' />
+            {/* </button> */}
             <div
               className='search-icon'
               style={{
