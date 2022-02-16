@@ -21,11 +21,13 @@ const ShowLinks = ({ onClose }) => {
           />
         </div>
         <div className='mobile-links-logo'>
+          <Link to= {'/'}>
           <img
             style={{ alignSelf: 'center' }}
             src='https://s.zillowstatic.com/pfs/static/z-logo-default.svg'
             alt='zillow logo'
-          />
+            />
+            </Link>
         </div>
       </div>
       <div className='mobile-links-container'>

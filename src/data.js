@@ -30,7 +30,7 @@ export const Links = [
   {
     id: 3,
     nav: 'Sell',
-    url: '/Error',
+    url: '/HomesForSale',
     linkSymbol: <FiChevronDown />,
   },
   {

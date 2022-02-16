@@ -3,6 +3,8 @@ import { FaBars } from 'react-icons/fa';
 import { FaCircle } from 'react-icons/fa';
 import FooterEssays from '../Components/FooterEssays';
 import { HomesForRent } from '../data';
+import { Link } from 'react-router-dom';
+
 
 const HomesDisplay = () => {
   // useEffect(() => {
@@ -35,6 +37,7 @@ const HomesDisplay = () => {
           />
         </button>
         <span>
+          <Link to={'/'}>
           <img
             style={{
               alignSelf: 'center',
@@ -43,7 +46,8 @@ const HomesDisplay = () => {
             }}
             src='https://s.zillowstatic.com/pfs/static/z-logo-icon.svg'
             alt='zillow logo'
-          />
+            />
+            </Link>
         </span>
         {/* <div> */}
         <input
