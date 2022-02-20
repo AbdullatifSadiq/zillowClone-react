@@ -19,7 +19,7 @@ Project is created with:
 * React.js
 
 ## Setup
-To Run this application locally, after downloading the zip file and unzipping it just  the html file in the folder and everything will run smoothly
+To Run this application locally, after downloading the zip file and unzipping it just install the html file in the folder and everything will run smoothly
 Thank You.
 
 ## Live Demo
