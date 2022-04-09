@@ -708,7 +708,7 @@ nav {
   }
   .services {
     position: absolute;
-    top: 54%;
+    top: 65%;
     padding: 0;
     vertical-align: middle;
     margin-top: 2rem;
@@ -723,7 +723,7 @@ nav {
     margin: 2rem 11rem 3rem 11rem;
     border: 0;
     position: absolute;
-    top: 45%;
+    top: 50%;
   }
   .service-card {
     background: white;
@@ -804,7 +804,7 @@ nav {
     line-height: 1.5rem;
     width: 100%;
     position: absolute;
-    bottom: -120%;
+    bottom: -135%;
   }
   /* HomesForSale/Rent pages */
   .search-nav {
@@ -1213,7 +1213,7 @@ nav {
     line-height: 1.5rem;
     width: 100%;
     position: absolute;
-    bottom: -150%;
+    bottom: -170%;
   }
   .footerLinks {
     display: grid;
