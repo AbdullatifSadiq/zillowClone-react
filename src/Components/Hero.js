@@ -18,21 +18,17 @@ const Hero = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   });
 
-  const search = () => {
-    console.log(location);
-  };
   return (
     <section className='hero'>
       <div className='center-content'>
         <h3>Change starts here</h3>
         <div className='search-top'>
-          <div className='search-1' ref={searchRef}>
+          <div className='search-2' ref={searchRef}>
             <input
               value={location}
               onChange={(e) => setLocation(e.target.value)}
